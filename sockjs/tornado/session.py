@@ -33,7 +33,7 @@ class ConnectionInfo(object):
         Request uri path
     """
     _exposed_headers = set(['referer', 'x-client-ip', 'x-forwarded-for',
-                            'x-cluster-client-ip', 'via', 'x-real-ip'])
+                            'x-cluster-client-ip', 'via', 'x-real-ip', 'origin'])
     def __init__(self, ip, cookies, arguments, headers, path):
         self.ip = ip
         self.cookies = cookies
